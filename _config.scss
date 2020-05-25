@@ -1,0 +1,28 @@
+$bs : 10px 10px 19px -4px rgba(255, 255, 255, 0.25);
+$paddings: (
+        'blue': 8px,
+        'red': 16px
+);
+
+/*$colors: (
+        'black': #000,
+        'blue' : #2748B3,
+        'red' : red
+);*/
+
+@mixin box-shadow{
+  -webkit-box-shadow: $bs;
+  -moz-box-shadow: $bs;
+  box-shadow: $bs;
+};
+
+@mixin blue-format($bluepage) {
+  @if $bluepage {
+    $padding: 8px;
+    $textcolor: blue;
+  }
+  @else {
+    $padding: 16px;
+    $textcolor: red;
+  }
+};
